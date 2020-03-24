@@ -30,7 +30,7 @@ ts <- clean_names(ts)
 
 states <- ts %>% dplyr::filter(country_region == "US") %>% dplyr::filter(!str_detect(province_state, ",")) %>% dplyr::filter(province_state != c("Diamond Princess", "Grand Princess")) %>% dplyr::select(-country_region)
 
-states <- states[c(1:3, 52:64)]
+states <- states[c(1:3, 52:65)]
 
 states <- melt(states, id.vars = c("province_state", "lat","long"))
 states$variable <- gsub( "x", "", states$variable)

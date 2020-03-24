@@ -32,7 +32,7 @@ ui <- bootstrapPage(
     h3("(",textOutput("num_matching", inline = TRUE),"cases)")),
   absolutePanel(top = 10, right = 10,
                 sliderInput(inputId = "date", "Select a Date", min = as.Date("2020-03-10"), 
-                            max = as.Date("2020-03-22"), value = as.Date("2020-03-10"), 
+                            max = as.Date("2020-03-23"), value = as.Date("2020-03-10"), 
                             step = .1,
                             animate = animationOptions(interval = .1)
                 ),
